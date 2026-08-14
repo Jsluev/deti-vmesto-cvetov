@@ -444,6 +444,13 @@ img { max-width: 100%; display: block; }
     font-size: 0.88rem; font-weight: 500; color: var(--blue-deep); transition: var(--transition);
 }
 .coordinator-card__link:hover { background: var(--blue-deep); color: var(--white); }
+.coordinators__signup {
+    text-align: center; margin-top: 40px;
+    padding-top: 32px; border-top: 1px solid rgba(45,55,72,0.06);
+}
+.coordinators__signup-text {
+    font-size: 0.95rem; color: var(--gray); margin-bottom: 16px;
+}
 
 /* --- FAQ --- */
 .faq { background: var(--white); }
