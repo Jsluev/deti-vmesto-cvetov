@@ -562,6 +562,7 @@ img { max-width: 100%; display: block; }
     .hero__cta .btn { width: 100%; }
     .hero__partners { flex-direction: column; gap: 10px; }
     .hero__partner-x { display: none; }
+    .hero__scroll { display: none; }
 
     .section-header { margin-bottom: 40px; }
     .section-tag { font-size: 0.72rem; padding: 5px 12px; }
@@ -582,13 +583,20 @@ img { max-width: 100%; display: block; }
 
     .join__grid { grid-template-columns: 1fr; }
 
-    .coordinators__grid { flex-direction: column; align-items: center; }
+    .coordinators__grid { flex-direction: column; align-items: center; gap: 16px; }
     .coordinator-card { padding: 28px 20px; }
+
+    .partner__slider-btn { display: none; }
 
     .contacts__grid { grid-template-columns: 1fr; max-width: 340px; margin-left: auto; margin-right: auto; }
 
-    .footer__inner { flex-direction: column; text-align: center; }
-    .footer__links { flex-wrap: wrap; justify-content: center; }
+    .lightbox__close { top: 12px; right: 12px; width: 36px; height: 36px; font-size: 1rem; }
+    .lightbox__prev, .lightbox__next { width: 36px; height: 36px; font-size: 1rem; }
+    .lightbox__prev { left: 12px; }
+    .lightbox__next { right: 12px; }
+
+    .footer__inner { flex-direction: column; text-align: center; gap: 16px; }
+    .footer__links { flex-wrap: wrap; justify-content: center; gap: 16px; }
 
     .scroll-top { bottom: 20px; right: 20px; width: 42px; height: 42px; font-size: 1.1rem; }
 }
@@ -604,6 +612,13 @@ img { max-width: 100%; display: block; }
     .campaign__step-num { font-size: 1.6rem; min-width: 40px; }
     .photo-stat__number { font-size: 1.8rem; }
     .photo-section__stats { gap: 20px; }
+    .photo-stat__label { font-size: 0.8rem; }
+    .partner__gallery-item { flex: 0 0 calc(100% - 16px); min-width: 0; }
+    .partner__gallery-item:not(:first-child) { margin-left: -8px; }
+    .contacts__grid { gap: 12px; }
+    .contact-card { padding: 24px 16px; }
+    .where-card { padding: 24px 18px; }
+    .coordinator-card { padding: 24px 16px; }
 }
 
 /* --- ANIMATIONS --- */
