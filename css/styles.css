@@ -422,7 +422,7 @@ img { max-width: 100%; display: block; }
 
 /* --- COORDINATORS --- */
 .coordinators { background: var(--cream); }
-.coordinators__grid { display: flex; justify-content: center; }
+.coordinators__grid { display: flex; justify-content: center; gap: 24px; }
 .coordinator-card {
     background: var(--white); border-radius: var(--radius-md); padding: 40px;
     text-align: center; box-shadow: var(--shadow); max-width: 400px; width: 100%;
