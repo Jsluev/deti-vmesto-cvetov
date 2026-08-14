@@ -147,15 +147,17 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
-    // --- Gallery "Show More" ---
-    const galleryGrid = document.getElementById('galleryGrid');
-    const galleryMore = document.getElementById('galleryMore');
-    if (galleryGrid && galleryMore) {
-        galleryMore.addEventListener('click', () => {
-            galleryGrid.classList.toggle('expanded');
-            galleryMore.textContent = galleryGrid.classList.contains('expanded')
-                ? 'Свернуть'
-                : 'Показать ещё';
+    // --- Partner Slider ---
+    const sliderTrack = document.getElementById('sliderTrack');
+    const sliderPrev = document.getElementById('sliderPrev');
+    const sliderNext = document.getElementById('sliderNext');
+    if (sliderTrack && sliderPrev && sliderNext) {
+        const scrollAmount = 300;
+        sliderPrev.addEventListener('click', () => {
+            sliderTrack.scrollBy({ left: -scrollAmount, behavior: 'smooth' });
+        });
+        sliderNext.addEventListener('click', () => {
+            sliderTrack.scrollBy({ left: scrollAmount, behavior: 'smooth' });
         });
     }
 

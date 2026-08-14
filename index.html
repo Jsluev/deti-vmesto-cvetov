@@ -271,38 +271,17 @@
     </section>
 
     
-    <!-- BOUQUET — full-width photo section -->
-    <section class="section photo-section" id="bouquet">
-        <div class="photo-section__bg">
-            <img src="img/soft-bouquet.jpg" alt="Букет от Ясного сада" class="photo-section__img">
-            <div class="photo-section__overlay photo-section__overlay--green"></div>
-        </div>
-        <div class="container photo-section__content">
-            <div class="section-header section-header--light">
-                <span class="section-tag section-tag--light">Партнёр</span>
-                <h2 class="section-title section-title--light">Букет от<br>Ясного сада</h2>
-                <p class="section-desc section-desc--light">Каждый класс получит один красивый букет от нашего партнёра — Ясного сада. Оформление и доставка — на нас.</p>
-            </div>
-            <div class="photo-section__cta">
-                <a href="#join" class="btn btn--white btn--lg">Принять участие</a>
-            </div>
-        </div>
-    </section>
-
     <!-- PARTNER — Ясный сад -->
     <section class="section partner" id="partner">
         <div class="container">
             <div class="section-header">
                 <span class="section-tag">Наш партнёр</span>
                 <h2 class="section-title">Ясный сад</h2>
-                <p class="section-desc">Социальное предприятие, где работают люди с особенностями развития</p>
             </div>
 
             <div class="partner__about">
                 <div class="partner__about-text">
                     <p><strong>«Ясный сад»</strong> — это цветочная мастерская, где собирают букеты люди с ментальными особенностями. Ребята, которые выросли в детских домах и интернатах, здесь учатся профессии, получают опыт работы и зарабатывают сами.</p>
-                    <p>Вместо ПНИ (психоневрологического интерната) с бесконечными одинаковыми днями — нормальная жизнь: свобода выбора, свои вещи, расписание, которое они строят сами. Кто-то хочет стать поваром, кто-то — курьером, а кто-то — банкиром. И они к этому идут.</p>
-                    <p>Мы выбрали «Ясный сад» партнёром акции, потому что каждый их букет — это не просто цветы. Это результат труда людей, которым дали шанс.</p>
                 </div>
                 <div class="partner__about-stats">
                     <div class="partner__stat">
@@ -322,48 +301,52 @@
 
             <div class="partner__gallery">
                 <h3 class="campaign__subtitle">Примеры букетов</h3>
-                <div class="partner__gallery-grid" id="galleryGrid">
-                    <div class="partner__gallery-item" data-index="0">
-                        <div class="partner__gallery-placeholder">
-                            <i class="ph ph-image"></i>
-                            <span>Фото 1</span>
+                <div class="partner__slider" id="partnerSlider">
+                    <div class="partner__slider-track" id="sliderTrack">
+                        <div class="partner__gallery-item" data-index="0">
+                            <div class="partner__gallery-placeholder">
+                                <i class="ph ph-image"></i>
+                                <span>Фото 1</span>
+                            </div>
+                        </div>
+                        <div class="partner__gallery-item" data-index="1">
+                            <div class="partner__gallery-placeholder">
+                                <i class="ph ph-image"></i>
+                                <span>Фото 2</span>
+                            </div>
+                        </div>
+                        <div class="partner__gallery-item" data-index="2">
+                            <div class="partner__gallery-placeholder">
+                                <i class="ph ph-image"></i>
+                                <span>Фото 3</span>
+                            </div>
+                        </div>
+                        <div class="partner__gallery-item" data-index="3">
+                            <div class="partner__gallery-placeholder">
+                                <i class="ph ph-image"></i>
+                                <span>Фото 4</span>
+                            </div>
+                        </div>
+                        <div class="partner__gallery-item" data-index="4">
+                            <div class="partner__gallery-placeholder">
+                                <i class="ph ph-image"></i>
+                                <span>Фото 5</span>
+                            </div>
+                        </div>
+                        <div class="partner__gallery-item" data-index="5">
+                            <div class="partner__gallery-placeholder">
+                                <i class="ph ph-image"></i>
+                                <span>Фото 6</span>
+                            </div>
                         </div>
                     </div>
-                    <div class="partner__gallery-item" data-index="1">
-                        <div class="partner__gallery-placeholder">
-                            <i class="ph ph-image"></i>
-                            <span>Фото 2</span>
-                        </div>
-                    </div>
-                    <div class="partner__gallery-item" data-index="2">
-                        <div class="partner__gallery-placeholder">
-                            <i class="ph ph-image"></i>
-                            <span>Фото 3</span>
-                        </div>
-                    </div>
-                    <div class="partner__gallery-item" data-index="3">
-                        <div class="partner__gallery-placeholder">
-                            <i class="ph ph-image"></i>
-                            <span>Фото 4</span>
-                        </div>
-                    </div>
-                    <div class="partner__gallery-item" data-index="4">
-                        <div class="partner__gallery-placeholder">
-                            <i class="ph ph-image"></i>
-                            <span>Фото 5</span>
-                        </div>
-                    </div>
-                    <div class="partner__gallery-item" data-index="5">
-                        <div class="partner__gallery-placeholder">
-                            <i class="ph ph-image"></i>
-                            <span>Фото 6</span>
-                        </div>
-                    </div>
+                    <button class="partner__slider-btn partner__slider-btn--prev" id="sliderPrev">
+                        <i class="ph ph-caret-left"></i>
+                    </button>
+                    <button class="partner__slider-btn partner__slider-btn--next" id="sliderNext">
+                        <i class="ph ph-caret-right"></i>
+                    </button>
                 </div>
-                <button class="partner__gallery-more" id="galleryMore">
-                    Показать ещё
-                    <i class="ph ph-caret-down"></i>
-                </button>
             </div>
 
             <!-- Lightbox -->
