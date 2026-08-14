@@ -146,4 +146,71 @@ document.addEventListener('DOMContentLoaded', () => {
             window.scrollTo({ top: 0, behavior: 'smooth' });
         });
     }
+
+    // --- Gallery "Show More" ---
+    const galleryGrid = document.getElementById('galleryGrid');
+    const galleryMore = document.getElementById('galleryMore');
+    if (galleryGrid && galleryMore) {
+        galleryMore.addEventListener('click', () => {
+            galleryGrid.classList.toggle('expanded');
+            galleryMore.textContent = galleryGrid.classList.contains('expanded')
+                ? 'Свернуть'
+                : 'Показать ещё';
+        });
+    }
+
+    // --- Lightbox ---
+    const lightbox = document.getElementById('lightbox');
+    const lightboxImg = document.getElementById('lightboxImg');
+    const lightboxClose = document.getElementById('lightboxClose');
+    const lightboxPrev = document.getElementById('lightboxPrev');
+    const lightboxNext = document.getElementById('lightboxNext');
+    const galleryItems = document.querySelectorAll('.partner__gallery-item');
+    let currentLightboxIndex = 0;
+
+    function openLightbox(index) {
+        if (!lightbox || !galleryItems.length) return;
+        currentLightboxIndex = index;
+        const item = galleryItems[index];
+        const img = item.querySelector('img');
+        if (img && lightboxImg) {
+            lightboxImg.src = img.src;
+            lightboxImg.alt = img.alt;
+        }
+        lightbox.classList.add('active');
+        document.body.style.overflow = 'hidden';
+    }
+
+    function closeLightbox() {
+        if (!lightbox) return;
+        lightbox.classList.remove('active');
+        document.body.style.overflow = '';
+    }
+
+    function navigateLightbox(dir) {
+        if (!galleryItems.length) return;
+        currentLightboxIndex = (currentLightboxIndex + dir + galleryItems.length) % galleryItems.length;
+        openLightbox(currentLightboxIndex);
+    }
+
+    if (lightboxClose) lightboxClose.addEventListener('click', closeLightbox);
+    if (lightboxPrev) lightboxPrev.addEventListener('click', () => navigateLightbox(-1));
+    if (lightboxNext) lightboxNext.addEventListener('click', () => navigateLightbox(1));
+
+    if (lightbox) {
+        lightbox.addEventListener('click', (e) => {
+            if (e.target === lightbox) closeLightbox();
+        });
+    }
+
+    galleryItems.forEach((item, i) => {
+        item.addEventListener('click', () => openLightbox(i));
+    });
+
+    document.addEventListener('keydown', (e) => {
+        if (!lightbox || !lightbox.classList.contains('active')) return;
+        if (e.key === 'Escape') closeLightbox();
+        if (e.key === 'ArrowLeft') navigateLightbox(-1);
+        if (e.key === 'ArrowRight') navigateLightbox(1);
+    });
 });
