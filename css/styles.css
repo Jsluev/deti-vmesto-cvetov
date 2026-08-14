@@ -581,6 +581,8 @@ img { max-width: 100%; display: block; }
     .where__stats { flex-direction: column; gap: 24px; }
     .stat__number { font-size: 2.4rem; }
 
+    .photo-section__stats { flex-direction: column; gap: 20px; margin-top: 32px; }
+
     .join__grid { grid-template-columns: 1fr; }
 
     .coordinators__grid { flex-direction: column; align-items: center; gap: 16px; }
@@ -666,11 +668,13 @@ padding: 50px 0;
 .photo-section__content {
     position: relative;
     z-index: 2;
+    padding: 0 8px;
 }
 .photo-section__stats {
     display: flex;
     justify-content: center;
-    gap: 72px;
+    flex-wrap: wrap;
+    gap: 32px 56px;
     margin-top: 56px;
 }
 .photo-stat {
