@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Страница не найдена — Дети вместо цветов</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'DM Sans', sans-serif;
+            background: #FAF6E8;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #2D3748;
+        }
+        .error {
+            text-align: center;
+            padding: 40px 24px;
+            max-width: 480px;
+        }
+        .error__code {
+            font-family: 'Playfair Display', serif;
+            font-size: 6rem;
+            font-weight: 700;
+            color: #E8735A;
+            line-height: 1;
+            margin-bottom: 16px;
+        }
+        .error__title {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.8rem;
+            font-weight: 600;
+            margin-bottom: 12px;
+        }
+        .error__text {
+            font-size: 1rem;
+            color: #718096;
+            line-height: 1.6;
+            margin-bottom: 32px;
+        }
+        .error__link {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            padding: 14px 28px;
+            background: #5B8EC9;
+            color: #fff;
+            border-radius: 100px;
+            font-size: 0.95rem;
+            font-weight: 600;
+            text-decoration: none;
+            transition: background 0.3s;
+        }
+        .error__link:hover {
+            background: #3D6FA3;
+        }
+    </style>
+</head>
+<body>
+    <div class="error">
+        <div class="error__code">404</div>
+        <h1 class="error__title">Страница не найдена</h1>
+        <p class="error__text">Похоже, этой страницы больше нет. Но вы можете вернуться на главную и узнать об акции «Дети вместо цветов».</p>
+        <a href="/" class="error__link">На главную</a>
+    </div>
+</body>
+</html>

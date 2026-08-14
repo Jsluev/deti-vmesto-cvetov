@@ -8,6 +8,7 @@
     <meta name="keywords" content="дети вместо цветов, благотворительность, день знаний, 1 сентября, школа профессий, букет, нейроотличные">
     <meta name="author" content="АНО Школа профессий">
     <meta name="robots" content="index, follow">
+    <meta name="theme-color" content="#5B8EC9">
 
     <!-- Open Graph -->
     <meta property="og:type" content="website">
@@ -82,6 +83,7 @@
     </script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://unpkg.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://unpkg.com/@phosphor-icons/web@2.0.3/src/regular/style.css">
     <link rel="stylesheet" href="css/styles.css">
@@ -91,7 +93,7 @@
     <!-- HEADER -->
     <header class="header" id="header">
         <div class="container header__inner">
-            <a href="#" class="header__logo">
+            <a href="#hero" class="header__logo">
                 <img src="img/logo-shkola-professii.svg" alt="Школа профессий" class="header__logo-img">
             </a>
             <nav class="header__nav" id="nav">
@@ -114,7 +116,7 @@
     </header>
 
     <!-- HERO -->
-    <section class="hero">
+    <section class="hero" id="hero">
         <div class="hero__bg">
             <img src="img/hero-bouquet.jpg" alt="Букет цветов" class="hero__img">
             <div class="hero__overlay"></div>
@@ -138,7 +140,7 @@
                     <img src="img/logo-shkola-professii.svg" alt="Школа профессий" class="hero__partner-img">
                 </span>
                 <span class="hero__partner-x">×</span>
-                <a href="https://yasnysad.online" target="_blank" class="hero__partner-name">Ясный сад</a>
+                <a href="https://yasnysad.online" target="_blank" rel="noopener noreferrer" rel="noopener noreferrer" class="hero__partner-name">Ясный сад</a>
             </div>
         </div>
         <div class="hero__scroll">
@@ -214,13 +216,13 @@
                     <p class="coordinator-card__role">Координатор акции</p>
                     <p class="coordinator-card__desc">Связь с классами, организация доставки подарков</p>
                     <div class="coordinator-card__contacts">
-                        <a href="tel:" class="coordinator-card__link">
+                        <a href="tel:+79262139603" class="coordinator-card__link">
                             <i class="ph ph-phone"></i>
-                            Телефон
+                            +7 (926) 213-96-03
                         </a>
-                        <a href="mailto:" class="coordinator-card__link">
+                        <a href="mailto:info@shkola-professii.ru" class="coordinator-card__link">
                             <i class="ph ph-envelope"></i>
-                            Email
+                            info@shkola-professii.ru
                         </a>
                     </div>
                 </div>
@@ -232,13 +234,13 @@
                     <p class="coordinator-card__role">Координатор по регионам</p>
                     <p class="coordinator-card__desc">Помощь с регистрацией, ответы на вопросы по участию</p>
                     <div class="coordinator-card__contacts">
-                        <a href="tel:" class="coordinator-card__link">
+                        <a href="tel:+79262139603" class="coordinator-card__link">
                             <i class="ph ph-phone"></i>
-                            Телефон
+                            +7 (926) 213-96-03
                         </a>
-                        <a href="mailto:" class="coordinator-card__link">
+                        <a href="mailto:info@shkola-professii.ru" class="coordinator-card__link">
                             <i class="ph ph-envelope"></i>
-                            Email
+                            info@shkola-professii.ru
                         </a>
                     </div>
                 </div>
@@ -253,7 +255,7 @@
     <!-- WHY IT MATTERS — full-width photo section -->
     <section class="section photo-section" id="why">
         <div class="photo-section__bg">
-            <img src="img/children-classroom.jpg" alt="Дети в классе" class="photo-section__img">
+            <img src="img/children-classroom.jpg" alt="Дети в классе" class="photo-section__img" loading="lazy">
             <div class="photo-section__overlay photo-section__overlay--blue"></div>
         </div>
         <div class="container photo-section__content">
@@ -324,7 +326,7 @@
                         <div class="campaign__step-num">04</div>
                         <div class="campaign__step-content">
                             <h4 class="campaign__step-title">Получите всё 31 августа</h4>
-                            <p class="campaign__step-text">Накануне 1 сентября <a href="https://yasnysad.online" target="_blank" class="step__link">«Ясный сад»</a> привозит букет с лентой имени класса. А ещё — сертификаты, грамоты и стикеры для каждого участника.</p>
+                            <p class="campaign__step-text">Накануне 1 сентября <a href="https://yasnysad.online" target="_blank" rel="noopener noreferrer" class="step__link">«Ясный сад»</a> привозит букет с лентой имени класса. А ещё — сертификаты, грамоты и стикеры для каждого участника.</p>
                         </div>
                     </div>
                 </div>
@@ -412,7 +414,7 @@
                 <div class="partner__text">
                     <p><strong>«Ясный сад»</strong> — это цветочная мастерская, где собирают букеты люди с ментальными особенностями. Ребята, которые выросли в детских домах и интернатах, здесь учатся профессии, получают опыт работы и зарабатывают сами.</p>
                     <p>В рамках акции «Ясный сад» подготовит для каждого участвующего класса красивый букет — с любовью, вниманием и заботой. Каждый цветок в нём — это история человека, который нашёл себя.</p>
-                    <a href="https://yasnysad.online" target="_blank" class="partner__link">
+                    <a href="https://yasnysad.online" target="_blank" rel="noopener noreferrer" class="partner__link">
                         Узнать больше о «Ясном саде»
                         <i class="ph ph-arrow-right"></i>
                     </a>
@@ -424,22 +426,22 @@
                 <div class="partner__slider" id="partnerSlider">
                     <div class="partner__slider-track" id="sliderTrack">
                         <div class="partner__gallery-item" data-index="0">
-                            <img src="img/bouquet-1.jpg" alt="Букет от Ясного сада" class="partner__gallery-img">
+                            <img src="img/bouquet-1.jpg" alt="Букет от Ясного сада" class="partner__gallery-img" loading="lazy">
                         </div>
                         <div class="partner__gallery-item" data-index="1">
-                            <img src="img/bouquet-2.jpg" alt="Букет от Ясного сада" class="partner__gallery-img">
+                            <img src="img/bouquet-2.jpg" alt="Букет от Ясного сада" class="partner__gallery-img" loading="lazy">
                         </div>
                         <div class="partner__gallery-item" data-index="2">
-                            <img src="img/bouquet-3.jpg" alt="Букет от Ясного сада" class="partner__gallery-img">
+                            <img src="img/bouquet-3.jpg" alt="Букет от Ясного сада" class="partner__gallery-img" loading="lazy">
                         </div>
                         <div class="partner__gallery-item" data-index="3">
-                            <img src="img/bouquet-4.jpg" alt="Букет от Ясного сада" class="partner__gallery-img">
+                            <img src="img/bouquet-4.jpg" alt="Букет от Ясного сада" class="partner__gallery-img" loading="lazy">
                         </div>
                         <div class="partner__gallery-item" data-index="4">
-                            <img src="img/bouquet-5.jpg" alt="Букет от Ясного сада" class="partner__gallery-img">
+                            <img src="img/bouquet-5.jpg" alt="Букет от Ясного сада" class="partner__gallery-img" loading="lazy">
                         </div>
                         <div class="partner__gallery-item" data-index="5">
-                            <img src="img/bouquet-6.jpg" alt="Букет от Ясного сада" class="partner__gallery-img">
+                            <img src="img/bouquet-6.jpg" alt="Букет от Ясного сада" class="partner__gallery-img" loading="lazy">
                         </div>
                     </div>
                     <button class="partner__slider-btn partner__slider-btn--prev" id="sliderPrev">
@@ -518,7 +520,7 @@
                         </div>
                         <h3 class="join__yandex-title">Яндекс форма</h3>
                         <p class="join__yandex-text">Заполните форму вручную для участия в акции</p>
-                        <a href="#" class="btn btn--warm btn--full" id="yandex-form-link">
+                        <a href="javascript:void(0)" class="btn btn--warm btn--full" id="yandex-form-link">
                             Заполнить форму
                             <i class="ph ph-arrow-right"></i>
                         </a>
@@ -649,7 +651,7 @@
                     <h3 class="contact-card__label">Телефон</h3>
                     <p class="contact-card__value">+7 (926) 213-96-03</p>
                 </a>
-                <a href="https://shkola-professii.ru" target="_blank" class="contact-card">
+                <a href="https://shkola-professii.ru" target="_blank" rel="noopener noreferrer" class="contact-card">
                     <div class="contact-card__icon">
                         <i class="ph ph-globe"></i>
                     </div>
@@ -658,10 +660,10 @@
                 </a>
             </div>
             <div class="contacts__social">
-                <a href="https://vk.com/cafe_zerna" target="_blank" class="social-link" aria-label="ВКонтакте">
+                <a href="https://vk.com/cafe_zerna" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="ВКонтакте">
                     <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M15.684 0H8.316C1.592 0 0 1.592 0 8.316v7.368C0 22.408 1.592 24 8.316 24h7.368C22.408 24 24 22.408 24 15.684V8.316C24 1.592 22.391 0 15.684 0zm3.692 17.123h-1.744c-.66 0-.864-.525-2.05-1.727-1.033-1-1.49-1.135-1.744-1.135-.356 0-.458.102-.458.593v1.575c0 .424-.135.678-1.253.678-1.846 0-3.896-1.118-5.335-3.202C4.624 10.857 4.03 8.57 4.03 8.096c0-.254.102-.491.593-.491h1.744c.44 0 .61.203.78.677.864 2.49 2.303 4.675 2.896 4.675.22 0 .322-.102.322-.66V9.721c-.068-1.186-.695-1.287-.695-1.71 0-.203.17-.407.44-.407h2.744c.373 0 .508.203.508.643v3.473c0 .372.17.508.271.508.22 0 .407-.136.813-.542 1.253-1.406 2.151-3.574 2.151-3.574.119-.254.322-.491.763-.491h1.744c.525 0 .644.27.525.643-.22 1.017-2.354 4.031-2.354 4.031-.186.305-.254.44 0 .78.186.254.796.779 1.203 1.253.745.847 1.32 1.558 1.473 2.05.17.49-.085.744-.576.744z"/></svg>
                 </a>
-                <a href="https://t.me/cafe_zerna" target="_blank" class="social-link" aria-label="Telegram">
+                <a href="https://t.me/cafe_zerna" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="Telegram">
                     <i class="ph ph-telegram-logo"></i>
                 </a>
             </div>
@@ -677,12 +679,12 @@
     <footer class="footer">
         <div class="container footer__inner">
             <div class="footer__logo">
-                <img src="img/logo-shkola-professii.svg" alt="Школа профессий" class="footer__logo-img">
+                <img src="img/logo-shkola-professii.svg" alt="Школа профессий" class="footer__logo-img" loading="lazy">
             </div>
             <div class="footer__links">
-                <a href="https://shkola-professii.ru/dokumenty/" target="_blank">Документы</a>
-                <a href="https://shkola-professii.ru/otchety/" target="_blank">Отчёты</a>
-                <a href="https://shkola-professii.ru/legal/" target="_blank">Реквизиты</a>
+                <a href="https://shkola-professii.ru/dokumenty/" target="_blank" rel="noopener noreferrer">Документы</a>
+                <a href="https://shkola-professii.ru/otchety/" target="_blank" rel="noopener noreferrer">Отчёты</a>
+                <a href="https://shkola-professii.ru/legal/" target="_blank" rel="noopener noreferrer">Реквизиты</a>
             </div>
             <p class="footer__copy">© 2018–2026 АНО «Школа профессий»</p>
         </div>
