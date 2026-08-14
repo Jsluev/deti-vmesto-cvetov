@@ -204,8 +204,8 @@ img { max-width: 100%; display: block; }
 
 /* --- STEPS --- */
 .about { background: var(--white); }
-.steps { display: flex; gap: 0; justify-content: center; }
-.step { flex: 1; max-width: 340px; }
+.steps { display: flex; gap: 24px; justify-content: center; }
+.step { flex: 1; max-width: 340px; padding: 0 8px; }
 .step__icon-wrap { display: flex; align-items: center; margin-bottom: 24px; padding-left: 4px; }
 .step__icon {
     width: 64px; height: 64px; border-radius: 50%;
