@@ -448,6 +448,9 @@ img { max-width: 100%; display: block; }
     font-size: 0.88rem; font-weight: 500; color: var(--blue-deep); transition: var(--transition);
 }
 .coordinator-card__link:hover { background: var(--blue-deep); color: var(--white); }
+.coordinator-card__backup { font-size: 0.82rem; color: var(--gray-light); margin-top: 8px; }
+.coordinator-card__backup a { color: var(--gray); text-decoration: underline; text-decoration-color: rgba(113,128,150,0.3); text-underline-offset: 2px; transition: var(--transition); }
+.coordinator-card__backup a:hover { color: var(--blue-deep); text-decoration-color: var(--blue-deep); }
 .coordinators__signup {
     text-align: center; margin-top: 40px;
     padding-top: 32px; border-top: 1px solid rgba(45,55,72,0.06);

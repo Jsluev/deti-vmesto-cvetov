@@ -73,12 +73,18 @@
             "@type": "PostalAddress",
             "addressCountry": "RU"
         },
-        "contactPoint": {
-            "@type": "ContactPoint",
-            "telephone": "+7-968-738-81-11",
-            "contactType": "customer service",
-            "email": "info@shkola-professii.ru"
-        }
+        "contactPoint": [
+            {
+                "@type": "ContactPoint",
+                "telephone": "+7-968-738-81-11",
+                "contactType": "customer service"
+            },
+            {
+                "@type": "ContactPoint",
+                "telephone": "+7-926-213-96-03",
+                "contactType": "customer service"
+            }
+        ]
     }
     </script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -222,20 +228,7 @@
                             <i class="ph ph-phone"></i>
                             +7 (968) 738-81-11
                         </a>
-                    </div>
-                </div>
-                <div class="coordinator-card">
-                    <div class="coordinator-card__avatar">
-                        <img src="img/yuliya.jpg" alt="Юлия Володина" class="coordinator-card__photo">
-                    </div>
-                    <h3 class="coordinator-card__name">Юлия Володина</h3>
-                    <p class="coordinator-card__role">Координатор акции</p>
-                    <p class="coordinator-card__desc">По всем вопросам об участии</p>
-                    <div class="coordinator-card__contacts">
-                        <a href="tel:+79262139603" class="coordinator-card__link">
-                            <i class="ph ph-phone"></i>
-                            +7 (926) 213-96-03
-                        </a>
+                        <p class="coordinator-card__backup">Запасной номер: <a href="tel:+79262139603">+7 (926) 213-96-03</a></p>
                     </div>
                 </div>
             </div>
@@ -642,13 +635,14 @@
                     <h3 class="contact-card__label">Эл. почта</h3>
                     <p class="contact-card__value">info@shkola-professii.ru</p>
                 </a>
-                <a href="tel:+79687388111" class="contact-card">
+                <div class="contact-card">
                     <div class="contact-card__icon">
                         <i class="ph ph-phone"></i>
                     </div>
-                    <h3 class="contact-card__label">Телефон</h3>
-                    <p class="contact-card__value">+7 (968) 738-81-11</p>
-                </a>
+                    <h3 class="contact-card__label">Телефоны</h3>
+                    <p class="contact-card__value"><a href="tel:+79687388111">+7 (968) 738-81-11</a></p>
+                    <p class="contact-card__value"><a href="tel:+79262139603">+7 (926) 213-96-03</a></p>
+                </div>
                 <a href="https://shkola-professii.ru" target="_blank" rel="noopener noreferrer" class="contact-card">
                     <div class="contact-card__icon">
                         <i class="ph ph-globe"></i>
