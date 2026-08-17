@@ -421,6 +421,9 @@ img { max-width: 100%; display: block; }
 }
 .join__info-item i { font-size: 1.2rem; color: var(--blue); flex-shrink: 0; }
 
+/* --- BOUQUETS GALLERY --- */
+.bouquets { background: var(--cream); }
+
 /* --- COORDINATORS --- */
 .coordinators { background: var(--cream); }
 .coordinators__grid { display: flex; justify-content: center; gap: 24px; }
