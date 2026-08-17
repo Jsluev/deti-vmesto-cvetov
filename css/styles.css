@@ -23,7 +23,7 @@
     --gray-light: #A0AEC0;
     --gray-bg: #F7FAFC;
     --white: #FFFFFF;
-    --font-body: 'DM Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+    --font-body: 'Nunito', -apple-system, BlinkMacSystemFont, sans-serif;
     --font-display: 'Playfair Display', Georgia, serif;
     --radius: 20px;
     --radius-md: 16px;
@@ -38,7 +38,7 @@
     --container-max: 1200px;
 }
 
-html { scroll-behavior: smooth; font-size: 16px; }
+html { scroll-behavior: smooth; font-size: 17px; }
 body { font-family: var(--font-body); color: var(--dark); background: var(--white); line-height: 1.65; -webkit-font-smoothing: antialiased; overflow-x: hidden; }
 a { text-decoration: none; color: inherit; }
 img { max-width: 100%; display: block; }
@@ -146,7 +146,7 @@ img { max-width: 100%; display: block; }
     letter-spacing: -0.01em;
 }
 .section-title--light { color: var(--white); }
-.section-desc { font-size: 1.05rem; color: var(--gray); margin-top: 12px; max-width: 520px; margin-left: auto; margin-right: auto; }
+.section-desc { font-size: 1.1rem; color: var(--gray); margin-top: 12px; max-width: 520px; margin-left: auto; margin-right: auto; }
 .section-desc--light { color: rgba(255,255,255,0.7); }
 
 /* --- PARTNER --- */
@@ -326,7 +326,7 @@ img { max-width: 100%; display: block; }
     color: var(--amber); margin-bottom: 8px; display: block;
 }
 .step__title { font-size: 1.15rem; font-weight: 600; color: var(--dark); margin-bottom: 10px; }
-.step__text { font-size: 0.92rem; color: var(--gray); line-height: 1.65; }
+.step__text { font-size: 0.95rem; color: var(--gray); line-height: 1.65; }
 .step__link { color: var(--blue-deep); font-weight: 500; text-decoration: underline; text-decoration-color: rgba(61,111,163,0.3); text-underline-offset: 2px; transition: var(--transition); }
 .step__link:hover { text-decoration-color: var(--blue-deep); }
 
@@ -360,7 +360,7 @@ img { max-width: 100%; display: block; }
     color: var(--red);
 }
 .benefit-card__title { font-size: 1.05rem; font-weight: 600; color: var(--dark); margin-bottom: 8px; }
-.benefit-card__text { font-size: 0.88rem; color: var(--gray); line-height: 1.6; }
+.benefit-card__text { font-size: 0.92rem; color: var(--gray); line-height: 1.6; }
 
 /* --- WHERE FUNDS GO --- */
 .where {
@@ -471,7 +471,7 @@ img { max-width: 100%; display: block; }
 .faq-item.active .faq-item__icon { transform: rotate(45deg); color: var(--blue); }
 .faq-item__answer { max-height: 0; overflow: hidden; transition: max-height 0.4s cubic-bezier(0.4, 0, 0.2, 1); }
 .faq-item.active .faq-item__answer { max-height: 300px; }
-.faq-item__answer p { padding: 0 0 22px; font-size: 0.92rem; color: var(--gray); line-height: 1.7; }
+.faq-item__answer p { padding: 0 0 22px; font-size: 0.95rem; color: var(--gray); line-height: 1.7; }
 
 /* --- CONTACTS --- */
 .contacts { background: var(--cream); }
@@ -612,7 +612,7 @@ img { max-width: 100%; display: block; }
     .hero__title { font-size: 2rem; }
     .hero__subtitle { font-size: 0.88rem; }
     .section-title { font-size: 1.7rem; }
-    .section-desc { font-size: 0.92rem; }
+    .section-desc { font-size: 1rem; }
     .benefit-card { padding: 24px 16px; }
     .join__placeholder { padding: 36px 16px; min-height: 240px; }
     .campaign__step-num { font-size: 1.6rem; min-width: 40px; }
