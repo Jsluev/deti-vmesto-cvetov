@@ -116,6 +116,7 @@ img { max-width: 100%; display: block; }
 .hero__cta { display: flex; gap: 14px; flex-wrap: wrap; margin-bottom: 56px; }
 .hero__partners { display: flex; align-items: center; gap: 16px; }
 .hero__partner-img { height: 36px; width: auto; filter: brightness(0) invert(1); opacity: 0.8; }
+.hero__partner-img--logo { filter: grayscale(1) brightness(1.8); opacity: 0.7; height: 32px; width: auto; object-fit: contain; }
 .hero__partner-x { color: rgba(255,255,255,0.4); font-size: 1.2rem; }
 .hero__partner-name { color: rgba(255,255,255,0.7); font-size: 0.95rem; font-weight: 500; transition: var(--transition); text-decoration: none; }
 .hero__partner-name:hover { color: var(--white); text-decoration: underline; }
