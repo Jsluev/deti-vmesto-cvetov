@@ -64,6 +64,8 @@ img { max-width: 100%; display: block; }
     transition: var(--transition);
 }
 .header__nav-link:hover { color: var(--blue-deep); background: rgba(91,142,201,0.08); }
+.header__phone { color: var(--blue-deep); font-weight: 600; white-space: nowrap; }
+.header__phone i { font-size: 1em; }
 .header__burger {
     display: none; flex-direction: column; gap: 5px;
     background: none; border: none; cursor: pointer; padding: 8px;
@@ -562,6 +564,7 @@ img { max-width: 100%; display: block; }
     .header__logo-img { height: 36px; }
     .header__nav { display: none; }
     .header__burger { display: flex; }
+    .header__phone { display: none; }
     .header__donate-btn span { display: none; }
     .header__donate-btn { padding: 10px 14px; }
 
