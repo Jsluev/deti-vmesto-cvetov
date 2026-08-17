@@ -400,15 +400,6 @@ img { max-width: 100%; display: block; }
 /* --- JOIN / FORM --- */
 .join { background: var(--white); }
 .join__grid { display: grid; grid-template-columns: 0.7fr 1.3fr; gap: 32px; align-items: start; }
-.join__placeholder {
-    background: var(--gray-bg); border: 2px dashed rgba(91,142,201,0.15);
-    border-radius: var(--radius); padding: 64px 40px; text-align: center;
-    min-height: 360px; display: flex; flex-direction: column;
-    align-items: center; justify-content: center;
-}
-.join__placeholder-icon { font-size: 2.5rem; color: var(--blue); opacity: 0.25; margin-bottom: 16px; }
-.join__placeholder-title { font-size: 1.05rem; font-weight: 600; color: var(--dark-soft); margin-bottom: 6px; }
-.join__placeholder-text { font-size: 0.88rem; color: var(--gray-light); }
 .join__side { display: flex; flex-direction: column; gap: 20px; }
 .join__yandex {
     background: var(--cream-warm); border-radius: var(--radius-md);
@@ -626,7 +617,6 @@ img { max-width: 100%; display: block; }
     .section-title { font-size: 1.7rem; }
     .section-desc { font-size: 1rem; }
     .benefit-card { padding: 24px 16px; }
-    .join__placeholder { padding: 36px 16px; min-height: 240px; }
     .campaign__step-num { font-size: 1.6rem; min-width: 40px; }
     .photo-stat__number { font-size: 1.8rem; }
     .photo-section__stats { gap: 20px; }
