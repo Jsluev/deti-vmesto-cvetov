@@ -394,6 +394,9 @@ img { max-width: 100%; display: block; }
 .stat__number { display: block; font-family: var(--font-display); font-size: 3rem; font-weight: 600; color: var(--amber-soft); line-height: 1; margin-bottom: 8px; }
 .stat__label { font-size: 0.85rem; color: rgba(255,255,255,0.55); line-height: 1.5; }
 
+/* --- WHY JOIN --- */
+.why-join { background: var(--cream); }
+
 /* --- JOIN / FORM --- */
 .join { background: var(--white); }
 .join__grid { display: grid; grid-template-columns: 0.7fr 1.3fr; gap: 32px; align-items: start; }
