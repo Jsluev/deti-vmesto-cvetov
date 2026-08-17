@@ -114,10 +114,10 @@ img { max-width: 100%; display: block; }
     line-height: 1.7; margin-bottom: 40px; max-width: 500px;
 }
 .hero__cta { display: flex; gap: 14px; flex-wrap: wrap; margin-bottom: 56px; }
-.hero__partners { display: flex; align-items: center; gap: 16px; }
+.hero__partners { display: flex; align-items: center; gap: 12px; }
 .hero__partner-img { height: 36px; width: auto; filter: brightness(0) invert(1); opacity: 0.8; }
-.hero__partner-img--logo { opacity: 0.8; height: 32px; width: auto; object-fit: contain; }
-.hero__partner-x { color: rgba(255,255,255,0.4); font-size: 1.2rem; }
+.hero__partner-img--logo { opacity: 0.8; height: 28px; width: auto; object-fit: contain; }
+.hero__partner-x { color: rgba(255,255,255,0.4); font-size: 1.2rem; line-height: 1; }
 .hero__partner-name { color: rgba(255,255,255,0.7); font-size: 0.95rem; font-weight: 500; transition: var(--transition); text-decoration: none; }
 .hero__partner-name:hover { color: var(--white); text-decoration: underline; }
 .hero__scroll {
