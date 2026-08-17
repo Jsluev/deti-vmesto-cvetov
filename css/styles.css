@@ -433,7 +433,10 @@ img { max-width: 100%; display: block; }
     width: 80px; height: 80px; border-radius: 50%;
     background: linear-gradient(135deg, var(--cream) 0%, var(--cream-warm) 100%);
     color: var(--blue); display: flex; align-items: center; justify-content: center;
-    margin: 0 auto 20px; font-size: 2rem;
+    margin: 0 auto 20px; font-size: 2rem; overflow: hidden;
+}
+.coordinator-card__photo {
+    width: 100%; height: 100%; object-fit: cover; border-radius: 50%;
 }
 .coordinator-card__name { font-size: 1.15rem; font-weight: 600; color: var(--dark); margin-bottom: 4px; }
 .coordinator-card__role { font-size: 0.88rem; color: var(--blue-deep); font-weight: 500; margin-bottom: 8px; }
