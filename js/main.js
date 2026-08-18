@@ -215,4 +215,22 @@ document.addEventListener('DOMContentLoaded', () => {
         if (e.key === 'ArrowLeft') navigateLightbox(-1);
         if (e.key === 'ArrowRight') navigateLightbox(1);
     });
+
+    // --- Lightbox swipe ---
+    if (lightbox) {
+        let touchStartX = 0;
+        let touchEndX = 0;
+
+        lightbox.addEventListener('touchstart', (e) => {
+            touchStartX = e.changedTouches[0].screenX;
+        }, { passive: true });
+
+        lightbox.addEventListener('touchend', (e) => {
+            touchEndX = e.changedTouches[0].screenX;
+            const diff = touchStartX - touchEndX;
+            if (Math.abs(diff) < 50) return;
+            if (diff > 0) navigateLightbox(1);
+            else navigateLightbox(-1);
+        }, { passive: true });
+    }
 });
