@@ -552,6 +552,7 @@ img { max-width: 100%; display: block; }
 /* --- MOBILE MENU --- */
 .header__nav.active {
     display: flex; position: fixed; top: 60px; left: 0; right: 0; bottom: 0;
+    height: auto;
     pointer-events: auto;
     background: #fff; z-index: 1001;
     flex-direction: column; padding: 16px 0; gap: 0;
