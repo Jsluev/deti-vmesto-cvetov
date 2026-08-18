@@ -153,9 +153,9 @@ img { max-width: 100%; display: block; }
 
 /* --- PARTNER --- */
 .partner { background: var(--cream); }
-.partner__logo-wrap { margin: 12px 0 8px; }
+.partner__logo-wrap { margin: 12px 0 8px; text-align: center; }
 .partner__logo-img {
-    height: 56px; width: auto; object-fit: contain;
+    height: 56px; width: auto; object-fit: contain; display: inline-block;
     filter: brightness(0) opacity(0.75); transition: var(--transition);
 }
 .partner__logo-img:hover { filter: brightness(0) opacity(1); }
