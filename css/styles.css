@@ -420,6 +420,13 @@ img { max-width: 100%; display: block; }
     width: 1px; background: rgba(91,142,201,0.12);
 }
 .join__form-block { position: relative; }
+.join__vpn-notice {
+    display: flex; align-items: center; gap: 10px; padding: 12px 16px;
+    background: rgba(229,168,61,0.08); border: 1px solid rgba(229,168,61,0.2);
+    border-radius: var(--radius-sm); margin-bottom: 16px;
+    font-size: 0.85rem; color: var(--dark-soft);
+}
+.join__vpn-notice i { font-size: 1.2rem; color: var(--amber); flex-shrink: 0; }
 .join__yandex {
     background: var(--cream-warm); border-radius: var(--radius-md);
     padding: 28px; border: 1px solid rgba(229,168,61,0.12);
